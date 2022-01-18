@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "85d45483-d08e-46b4-90eb-0df55a2fecc8",
+		"name": "IpBasedGeoApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Geo Location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"ress\",\n    \"password\": \"Testing.123\",\n    \"ipAddress\": \"24.48.0.1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/geo/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geo",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
